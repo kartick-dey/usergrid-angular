@@ -1,0 +1,39 @@
+ /* The scrollable part */
+
+ .search-field {
+   margin-top: 30px;
+   width: 40%;
+ }
+  
+ .scrollable {
+   width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  table {
+    width: 100%;
+    tr {
+      border: 1px solid #ddd;
+      padding: 5px;
+      th {
+        padding: 10px;
+        position: sticky;
+        background-color: #ccc;
+        z-index: 2;
+        top: 0;
+        border-left: 1px solid #ddd;
+        cursor: pointer;
+      }
+      td {
+        border-left: 1px solid #ddd;
+        padding: 10px;
+        margin: 2px;
+      }
+      .rowColor {
+        background-color: #f2f2f2;
+      }
+  }
+  }
+}
+

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "UserGrid"
+    }
+  },
+  "defaultProject": "UserGrid",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,17 @@
+<div class="form-group">
+    <input type="text" class="form-control search-field" placeholder="Search by name" [(ngModel)] = "searchByName">
+</div>
+<div class="scrollable">
+    <table>
+        <tr>
+            <th (click)="onClickColumn('firstName')">First Name</th>
+            <th (click)="onClickColumn('lastName')">Last Name</th>
+            <th (click)="onClickColumn('email')">Email</th>
+        </tr>
+        <tr *ngFor="let user of users | sortPipe : seletedColumn | userSearchPipe: searchByName; let even = even; trackBy:trackById" [ngClass]="{'rowColor': even}">
+            <td>{{ user.firstName}}</td>
+            <td>{{ user.lastName}}</td>
+            <td>{{ user.email}}</td>
+        </tr>
+    </table>
+</div>
